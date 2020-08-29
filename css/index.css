@@ -148,7 +148,7 @@ html {
 html,
 body {
   font-family: 'Gotu', sans-serif;
-  background-color: beige;
+  background-color: #ffffff;
 }
 h1,
 h2,
@@ -183,10 +183,10 @@ header {
   align-items: center;
   flex-direction: column;
   padding: 2%;
-  background-color: #3498db;
+  background-color: darkgreen;
 }
 header h1 {
-  color: white;
+  color: #fbfbfb;
   text-shadow: 1.5px 0 0;
 }
 @media (max-width: 559px) {
@@ -204,7 +204,7 @@ header nav a {
   width: 100%;
   font-size: 1.5rem;
   text-decoration: none;
-  color: white;
+  color: #fbfbfb;
   font-weight: bolder;
 }
 header nav a:hover {
@@ -259,139 +259,233 @@ header nav a:hover {
     margin: 5%;
   }
 }
-.aSection {
+.sativaSection {
   text-align: center;
   margin-top: 3%;
 }
-.aSection h2 {
+.sativaSection h2 {
   margin: 2%;
 }
-.aSection div {
+.sativaSection div {
   display: flex;
   justify-content: space-evenly;
   align-items: normal;
   flex-direction: row;
   margin: 3%;
 }
-.aSection div img {
+.sativaSection div img {
   border-radius: 50%;
   width: 20%;
 }
 @media (max-width: 850px) {
-  .aSection div img {
+  .sativaSection div img {
     width: 25%;
   }
 }
 @media (max-width: 660px) {
-  .aSection div img {
+  .sativaSection div img {
     width: 30%;
   }
 }
 @media (max-width: 500px) {
-  .aSection div img {
+  .sativaSection div img {
     width: 75%;
   }
 }
-.aSection div .effects {
+.sativaSection div .effects {
   width: 20%;
 }
 @media (max-width: 500px) {
-  .aSection div .effects {
+  .sativaSection div .effects {
     width: 100%;
     margin: 3%;
   }
 }
 @media (max-width: 500px) {
-  .aSection div .effects ul li {
+  .sativaSection div .effects ul li {
     margin-left: 40%;
     list-style: disc;
     text-align: initial;
   }
 }
-.aSection div .uses {
+.sativaSection div .uses {
   width: 20%;
 }
 @media (max-width: 500px) {
-  .aSection div .uses {
+  .sativaSection div .uses {
     width: 100%;
     margin: 3%;
   }
 }
 @media (max-width: 500px) {
-  .aSection div .uses ul li {
+  .sativaSection div .uses ul li {
     margin-left: 40%;
     list-style: disc;
     text-align: initial;
   }
 }
-.aSection div .commonStrains {
+.sativaSection div .commonStrains {
   width: 20%;
 }
 @media (max-width: 500px) {
-  .aSection div .commonStrains {
+  .sativaSection div .commonStrains {
     width: 100%;
     margin: 3%;
   }
 }
 @media (max-width: 500px) {
-  .aSection div .commonStrains ul li {
+  .sativaSection div .commonStrains ul li {
     margin-left: 40%;
     list-style: disc;
     text-align: initial;
   }
 }
 @media (max-width: 500px) {
-  .aSection div {
+  .sativaSection div {
     flex-direction: column;
     align-items: center;
     border-bottom: 3px;
     border-style: dashed;
-    border-color: #3498db;
+    border-color: darkgreen;
   }
 }
-h2 {
+.indicaSection {
+  text-align: center;
+  margin-top: 5%;
+}
+.indicaSection h2 {
   margin: 2%;
 }
-p {
-  width: 90%;
-}
-@media (max-width: 500px) {
-  p {
-    order: 1;
-  }
-}
-div {
+.indicaSection div {
   display: flex;
   justify-content: space-evenly;
   align-items: normal;
   flex-direction: row;
   margin: 3%;
 }
-div img {
+.indicaSection div img {
+  border-radius: 50%;
+  width: 20%;
+  order: 1;
+}
+@media (max-width: 850px) {
+  .indicaSection div img {
+    width: 25%;
+  }
+}
+@media (max-width: 500px) {
+  .indicaSection div img {
+    width: 75%;
+    order: -1;
+  }
+}
+.indicaSection div .indicaEffects {
+  width: 20%;
+}
+@media (max-width: 500px) {
+  .indicaSection div .indicaEffects {
+    width: 100%;
+    margin: 3%;
+  }
+}
+@media (max-width: 500px) {
+  .indicaSection div .indicaEffects ul li {
+    margin-left: 40%;
+    list-style: disc;
+    text-align: initial;
+  }
+}
+.indicaSection div .indicaUses {
+  width: 20%;
+}
+@media (max-width: 500px) {
+  .indicaSection div .indicaUses {
+    width: 100%;
+    margin: 3%;
+  }
+}
+@media (max-width: 500px) {
+  .indicaSection div .indicaUses ul li {
+    margin-left: 40%;
+    list-style: disc;
+    text-align: initial;
+  }
+}
+.indicaSection div .indicaCommonStrains {
+  width: 20%;
+}
+@media (max-width: 500px) {
+  .indicaSection div .indicaCommonStrains {
+    width: 100%;
+    margin: 3%;
+  }
+}
+@media (max-width: 500px) {
+  .indicaSection div .indicaCommonStrains ul li {
+    margin-left: 40%;
+    list-style: disc;
+    text-align: initial;
+  }
+}
+@media (max-width: 500px) {
+  .indicaSection div {
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 3px;
+    border-style: dashed;
+    border-color: darkgreen;
+  }
+}
+.hybridSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 5%;
+}
+.hybridSection h2 {
+  margin: 2%;
+}
+.hybridSection p {
+  width: 90%;
+}
+@media (max-width: 500px) {
+  .hybridSection p {
+    order: 1;
+  }
+}
+.hybridSection div {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: normal;
+  flex-direction: row;
+  margin: 3%;
+}
+.hybridSection div img {
   border-radius: 50%;
   width: 30%;
 }
 @media (max-width: 500px) {
-  div img {
+  .hybridSection div img {
     width: 75%;
   }
 }
 @media (max-width: 500px) {
-  div {
+  .hybridSection div .hybridCommonStrains {
     width: 100%;
     margin: 3%;
     text-align: center;
   }
 }
 @media (max-width: 500px) {
-  div ul li {
+  .hybridSection div .hybridCommonStrains ul li {
     margin-left: 40%;
     list-style: disc;
     text-align: initial;
   }
 }
 @media (max-width: 500px) {
-  div {
+  .hybridSection div {
     flex-direction: column;
     align-items: center;
   }
@@ -409,7 +503,7 @@ div img {
 .btn a button {
   display: block;
   width: 300px;
-  background-color: #3498db;
+  background-color: #355A20;
   margin: 0 10px 20px;
   color: white;
   height: 100px;
@@ -418,8 +512,8 @@ div img {
   cursor: pointer;
 }
 .btn a button:hover {
-  background-color: white;
-  color: black;
+  background-color: #ffffff;
+  color: #355A20;
 }
 @media (max-width: 500px) {
   .btn a button {
@@ -461,7 +555,7 @@ div img {
   .team section .outside .react1 {
     border-bottom: 3px;
     border-style: dashed;
-    border-color: #3498db;
+    border-color: darkgreen;
     margin-bottom: 5%;
   }
 }
@@ -480,6 +574,6 @@ div img {
   .team section {
     border-bottom: 3px;
     border-style: dashed;
-    border-color: #3498db;
+    border-color: darkgreen;
   }
 }
