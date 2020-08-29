@@ -1,0 +1,30 @@
+.info{
+    .flex(@direction: column);
+    img{
+        border-radius: 5%;
+        margin: 3%;
+
+        @media @mobile{
+            width: 80%;
+        }//closes mobile media query 
+
+        @media @tiny-screen{
+            margin: 10%;
+        }//closes tiny-screen media query
+    }//closes img
+
+    p{
+        width: 55%;
+        text-align: justify;
+        margin-bottom: 3%;
+
+        @media @mobile{
+            width: 80%;
+        }//closes mobile media query
+
+        @media @tiny-screen{
+            text-align: inherit;
+            margin: 5%;
+        }//closes tiny-screen media query
+    }//closes p
+}//closes section

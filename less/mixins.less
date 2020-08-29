@@ -1,0 +1,41 @@
+/* 
+    Creates a flex container 
+    Default is to center as a flex row but can be changed with arguments
+*/
+.flex(@justify:center, @align:center, @direction: row){
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+    flex-direction: @direction;
+}
+
+/* 
+    Creates a bottom border
+    Default is 3px dashed with the color of the header 
+*/
+.border-bottom(@size:3px, @style:dashed, @color:@header){
+    border-bottom: @size;
+    border-style: @style;
+    border-color: @color;
+}
+
+/*
+    Creates a button that can be changed
+    Default is 200px wide, color is header color and text is white,
+    rounded borders and height is 200px
+*/
+.custom-btn(@width:200px, @bg-color:#355A20, @txt-color:white){
+    display:block;
+    width: @width;
+    background-color: @bg-color;
+    margin: 0 10px 20px;
+    color: @txt-color;
+    height: 100px;
+    border-radius: 10px;
+    font-size: 3rem;
+
+    &:hover{
+        background-color: lighten(@font-color, 10%);
+        color: @bg-color;
+    }
+}

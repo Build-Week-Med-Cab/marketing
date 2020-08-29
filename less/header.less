@@ -1,0 +1,41 @@
+header{
+    .flex(@direction: column);
+    padding: 2%;
+    background-color: @header;
+
+    h1 {
+        color: @font-color;
+        text-shadow: 1.5px 0 0;
+
+        @media @sm-mobile{
+            font-size: 3.5rem;
+        }
+      }//closes h1
+
+    nav{
+        margin:1%;
+        width:60%;
+        text-align: center;
+        a{
+            margin: 2%;
+            width: 100%;
+            font-size: 1.5rem;
+            text-decoration: none;
+            color: @font-color;
+            font-weight: bolder;
+
+            &:hover{
+                color: black;
+            }//closes hover
+
+        }//closes a
+
+        @media @sm-mobile{
+            width: 80%;
+        }//closes sm-mobile media query
+
+        @media @tiny-screen{
+            .flex(@direction: column);
+        }//closes tiny-screen media query
+    }//closes nav
+}//closes header

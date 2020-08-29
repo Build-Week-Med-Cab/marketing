@@ -1,0 +1,13 @@
+/* 
+    Creates a flex container 
+    Default is to center as a flex row but can be changed with arguments
+*/
+/* 
+    Creates a bottom border
+    Default is 3px dashed with the color of the header 
+*/
+/*
+    Creates a button that can be changed
+    Default is 200px wide, color is header color and text is white,
+    rounded borders and height is 200px
+*/
